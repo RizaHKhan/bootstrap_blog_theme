@@ -68,20 +68,17 @@
       </h3>
 
       <?php
-  $counter = 0;
   if (have_posts()) {
     while(have_posts()) {
       the_post();
 ?>
       <div class="blog-post">
         <h2 class="blog-post-title"><?php the_title(); ?></h2>
-        <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+        <p class="blog-post-meta"><?php the_date(); ?> <a href="#"><?php the_author(); ?></a></p>
 <p><?php the_content(); ?></p>
       </div><!-- /.blog-post -->
 
 <?php
-      echo $counter;
-      $counter++;
     }
   }
 ?>
