@@ -19,3 +19,9 @@ function register_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'register_scripts');
+
+function register_widgets () {
+
+}
+
+add_action('widgets_init', 'register_widgets');
