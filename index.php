@@ -169,3 +169,4 @@
 
 </main><!-- /.container -->
 
+<?php get_footer(); ?>
