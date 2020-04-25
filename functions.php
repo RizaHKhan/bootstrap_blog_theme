@@ -44,3 +44,14 @@ function register_widgets()
 }
 
 add_action('widgets_init', 'register_widgets');
+
+function register_menus()
+{
+  $locations = array(
+    'categories' => 'Category Menu'
+  );
+
+  register_nav_menus($locations);
+}
+
+add_action('init', 'register_menus');

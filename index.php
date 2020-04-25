@@ -14,6 +14,14 @@
     <a class="p-2 text-muted" href="#">Health</a>
     <a class="p-2 text-muted" href="#">Style</a>
     <a class="p-2 text-muted" href="#">Travel</a>
+    <?php wp_nav_menu(
+      array(
+        'menu' => 'categories',
+        'container' => '',
+        'theme_location' => 'categories',
+        'items_wrap' => '<nav id="" class="navbar-nav flex-column text-sm-center text-md-left">%3$s</nav>'
+      )
+    ); ?>
   </nav>
 </div>
 
